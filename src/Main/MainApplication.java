@@ -29,9 +29,9 @@ public class MainApplication {
         Renderer renderer = new Renderer();
 
         // Entities
-        //Transform transform = new Transform(new Vector3f(0.0f,0.0f,-2.0f), new Vector3f(0,0,0), new Vector3f(1.0f,1.0f,1.0f));
+        Transform transform = new Transform(new Vector3f(0.0f,0.0f,-2.0f), new Vector3f(0,0,0), new Vector3f(1.0f,1.0f,1.0f));
         Entity entity = new Entity();
-        entity.setTransform(block.getTransform());
+        entity.setTransform(transform);
         entity.addComponent(new ModelComponent(vao));
 
         while (!window.shouldClose()) {
